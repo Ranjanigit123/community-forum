@@ -8,7 +8,12 @@ const postRoutes = require('./routes/postRoutes');
 const likeRoutes = require('./routes/likeRoutes');
 
 const app = express();
-app.use(cors());
+app.use(cors(
+    {
+        origin: "https://ranjanicommunityforum.netlify.app",
+        methods: "GET,POST,PUT,DELETE",
+    }
+));
 app.use(express.json());
 
 const MONGO_URL = 
