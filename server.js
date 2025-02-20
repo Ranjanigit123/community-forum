@@ -9,10 +9,10 @@ const likeRoutes = require('./routes/likeRoutes');
 
 const app = express();
 app.use(cors(
-    {
-        origin: "https://ranjanicommunityforum.netlify.app",
-        methods: "GET,POST,PUT,DELETE",
-    }
+    //{
+     //   origin: "https://ranjanicommunityforum.netlify.app",
+     //   methods: "GET,POST,PUT,DELETE",
+    //}
 ));
 app.use(express.json());
 
